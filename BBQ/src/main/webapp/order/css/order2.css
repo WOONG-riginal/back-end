@@ -1,0 +1,145 @@
+@charset "utf-8";
+html,body {    
+    font-family: 'Noto Sans KR',sans-serif;
+}
+#wrap {    
+    margin: 0 auto;
+    width: 330px;
+    background-color: #fff;
+}
+header .shape {
+    margin-left: 20px;
+    position: relative;        
+}
+header .info {
+	width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 12px;    
+    position: absolute;
+    margin-top: 10px;     
+}
+
+header .info p:first-child {
+    color: #888888;     
+}
+header .info p:nth-child(2) {
+    color : #000;
+}
+header .info p:last-child {
+    color: #888888;
+}
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;    
+    margin-bottom: 56px;
+    margin-top: 57px;
+}
+.logo img {
+    width: 83px;
+    height: 40px;
+}
+.contents {
+    margin-top: 64px;
+}
+.login input {    
+    margin-bottom: 10px;
+    width: 100%;
+    height: 43px;
+}
+.login .float {
+    margin-top: 22px;
+}
+.login .float input {
+    float: left;
+}
+.login #request-store {
+	transform: translateX(100px);
+}
+.login h5 {
+    float: right;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #444444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+#fform,#ffform,#fffform,#addressValue{
+	background-color: #fff;
+}
+.menu-select h3{
+	text-align: center;
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: #e31937;
+	font-weight: bold;
+	cursor: pointer;
+}
+.menu-select ul li{
+	display: flex;
+	flex-flow: row wrap;
+}
+.menu-select input[type=radio] {
+    display: none;
+}
+.menu-select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 200px;
+    width: 154px;
+    border: 2px solid inherit;
+    margin-left: 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    text-align: center;    
+    font-size:12px;
+    background-color: #fff;
+    color: black;
+}
+.menu-select input[type=radio]+label img{
+	width: 150px;
+	height: 150px;
+}
+.menu-select input[type=radio]:checked+label{
+    border: 2px solid #e31937;
+}
+
+.select input[type=radio] {
+    display: none;
+    float: right;
+}
+.select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 44px;
+    width: 60px;
+    line-height: 44px;
+    border-radius: 5px;
+    text-align: center;
+    font-size:12px;
+    background-color: #f7f7f7;
+    color: black;
+    transform: translateX(100px);
+}
+.select input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+.login .my-address{
+	transform: translateY(10px);
+	margin-top: 10px;
+}
+.order-btn {
+    margin-bottom: 36px;
+    border-radius: 10px;
+    background-color: #e31937;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #fff;
+}
