@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Chap01ServletBasic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!--   1. 서블릿 등록 -->
+  <servlet>
+  	<!-- 서블릿 이름, 아래 servlet mapping과 맞춰줌 -->
+  	<servlet-name>hello</servlet-name>
+  	<!-- 등록한 서블릿 클래스 = 풀패키지명으로 작성 -->
+  	<servlet-class>view.HelloServlet</servlet-class>
+  </servlet>
+  <!-- 2. 서블릿 매핑 = 서블릿과 주소창 연결 -->
+  <servlet-mapping>
+  	<!-- 지도 좌표 -->
+  	<servlet-name>hello</servlet-name>
+  	<!-- 주소창에 나올 내용 -->
+  	<url-pattern>/helloservlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 
+  	클라이언트로부터 요청이 들어오면 어떤 서블릿 자바 파일을 실행 할지를 먼저 기술해야 함
+  	아파치 톰캣 서버가 실행되면 web.xml과 annotation을 읽어서
+  	요청 이름과 실행할 자바 파일을 매핑시켜 서블릿 컨테이너(톰캣)에 등록하여 차곡차곡 쌓아둠 
+   -->
+  
+  
+  <!--   1-2. 서블릿 등록 -->
+  <servlet>
+  	<servlet-name>hello2</servlet-name>
+  	<servlet-class>view.HelloServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hello2</servlet-name>
+	<url-pattern>/helloservlet2</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+</web-app>
