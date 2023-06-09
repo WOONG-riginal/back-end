@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Bitter&family=Black+Han+Sans&family=Do+Hyeon&family=Dokdo&family=Dongle&family=East+Sea+Dokdo&family=Fira+Sans&family=Gothic+A1&family=Gugi&family=Hahmlet&family=Josefin+Sans&family=Kanit&family=Lora&family=Moon+Dance&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Open+Sans&family=Oswald:wght@200&family=Oxygen&family=PT+Sans+Narrow&family=PT+Serif&family=Passions+Conflict&family=Prompt&family=Raleway&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&family=Rubik+Bubbles&family=Sevillana&family=Seymour+One&family=Source+Code+Pro&family=Ubuntu&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
+
+/* 영문 폰트 */
+.barlow {font-family: 'Barlow', sans-serif;}
+.bitter {font-family: 'Bitter', serif;}
+.firasans {font-family: 'Fira Sans', sans-serif;}
+.josefinsans {font-family: 'Josefin Sans', sans-serif;}
+.kanit {font-family: 'Kanit', sans-serif;}
+.lora {font-family: 'Lora', serif;}
+.montserrat {font-family: 'Montserrat', sans-serif;}
+.moondance {font-family: 'Moon Dance', cursive;}
+.opensans {font-family: 'Open Sans', sans-serif;}
+.oswald {font-family: 'Oswald', sans-serif;}
+.oxygen {font-family: 'Oxygen', sans-serif;}
+.passionsconflict {font-family: 'Passions Conflict', cursive;}
+.prompt {font-family: 'Prompt', sans-serif;}
+.ptsansnarrow {font-family: 'PT Sans Narrow', sans-serif;}
+.ptserif {font-family: 'PT Serif', serif;}
+.roboto {font-family: 'Roboto', sans-serif;}
+.raleway {font-family: 'Raleway', sans-serif;}
+.robotocondensed {font-family: 'Roboto Condensed', sans-serif;}
+.robotomono {font-family: 'Roboto Mono', monospace;}
+.rubikbubbles {font-family: 'Rubik Bubbles', cursive;}
+.sevillana {font-family: 'Sevillana', cursive;}
+.seymourone {font-family: 'Seymour One', sans-serif;}
+.sourcecodepro {font-family: 'Source Code Pro', monospace;}
+.ubuntu {font-family: 'Ubuntu', sans-serif;}
+
+
+
+/* 한글 폰트 */
+.blackhansans {font-family: 'Black Han Sans', sans-serif;}
+.dohyeon {font-family: 'Do Hyeon', sans-serif;}
+.dokdo {font-family: 'Dokdo', cursive;}
+.dongle {font-family: 'Dongle', sans-serif;}
+.eastseadokdo {font-family: 'East Sea Dokdo', cursive;}
+.gothica1 {font-family: 'Gothic A1', sans-serif;}
+.gugi {font-family: 'Gugi', cursive;}
+.hahmlet {font-family: 'Hahmlet', serif;}
+.nanumbrushscript {font-family: 'Nanum Brush Script', cursive;}
+.nanumgothic {font-family: 'Nanum Gothic', sans-serif;}
+.nanumgothiccoding {font-family: 'Nanum Gothic Coding', monospace;}
+.nanummyeongjo {font-family: 'Nanum Myeongjo', serif;}
+.nanumpenscript {font-family: 'Nanum Pen Script', cursive;}
+.notosanskr {font-family: 'Noto Sans KR', sans-serif;}
+.notoserifkr {font-family: 'Noto Serif KR', serif;}
+.yeonsung {font-family: 'Yeon Sung', cursive;}
+
+
