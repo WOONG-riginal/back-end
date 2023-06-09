@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Request Form</title>
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+	<style>
+		#wrap{
+			width: 90%;
+			margin: 20px auto;
+			border: 1px solid #000;
+			border-radius: 5px ;
+		}
+		h1{
+			text-align: center;
+			font-size: 24px;
+		}
+		.btn{
+			display: flex;
+			justify-content: center;
+		}
+		.btn input{
+			width: 100px;
+			height: 50px;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="panel-heading">
+		<h1>Form - Parameter</h1>
+	</div>
+	<div class="panel-body">
+		<form action="FormServlet" method="post" autocomplete="off">
+		<!-- <form action="./FormJSP.jsp" method="post" autocomplete="off"/> -->
+			<table class="table">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name" size="30"/></td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td><input type="text" name="id" size="50"/></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="password"/></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address"/></td>
+				</tr>
+				<tr>
+					<td>Qty</td>
+					<td><input type="number" name="qty" min="1" max="10"></td>
+				</tr>
+				<tr>
+					<td>E-Mail</td>
+					<td><input type="text" name="email"/></td>
+				</tr>
+				<tr>
+					<td>URL</td>
+					<td><input type="text" name="url" size="50"/></td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td><input type="date" name="date"/></td>
+				</tr>
+				<tr>
+					<td>Comment</td>
+					<td><textarea name="comment" cols="50" rows="10"></textarea></td>
+				</tr>
+				<tr>
+					<td>Favorite Thing</td>
+					<td>
+						<input type="radio" name="fvThing" value="Tennis" checked/>Tennis<br>
+						<input type="radio" name="fvThing" value="Lego"/>Lego<br>
+						<input type="radio" name="fvThing" value="Movie"/>Movie<br>
+						<input type="radio" name="fvThing" value="Music"/>Music<br>
+						<input type="radio" name="fvThing" value="Development"/>Development<br>
+						<input type="radio" name="fvThing" value="Collection"/>Collection
+					</td>
+				</tr>
+				<tr>
+					<td>Favorite Movie</td>
+					<td>
+						<input type="checkbox" name="fvMovie" value="Redemption Shank" checked/>Redemption Shank<br>
+						<input type="checkbox" name="fvMovie" value="Back To The Future"/>Back To The Future<br>
+						<input type="checkbox" name="fvMovie" value="Indiana"/>Indiana<br>
+						<input type="checkbox" name="fvMovie" value="Drunken Dragon"/>Drunken Dragon<br>
+						<input type="checkbox" name="fvMovie" value="Love Actually"/>Love Actually<br>
+						<input type="checkbox" name="fvMovie" value="River"/>River
+					</td>
+				</tr>
+				<tr>
+					<td>Best Choice</td>
+					<td>
+						<select name="choice"/>
+							<option>Best Choice Multiple</option>
+							<option value="Queen">Queen</option>
+							<option value="Michael Jackson">Michael Jackson</option>
+							<option value="Seotaeji" selected>Seotaeji</option>
+							<option value="ShinHaeChul">ShinHaeChul</option>
+							<option value="Four Seasons">Four Seasons</option>
+							<option value="Extreme">Extreme</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Choice Multiple</td>
+					<td>
+						<select name="choiceMulti" multiple size="6">
+							<option>Best Choice Multiple</option>
+							<option value="Queen">Queen</option>
+							<option value="Michael Jackson">Michael Jackson</option>
+							<option value="Seotaeji" selected>Seotaeji</option>
+							<option value="ShinHaeChul">ShinHaeChul</option>
+							<option value="Four Seasons">Four Seasons</option>
+							<option value="Extreme">Extreme</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>File Upload</td>
+					<td><input type="file" name="file" class="form-control"/></td>
+				</tr>
+			</table>
+			<div class="btn">
+				<input type="reset" value="Reset">
+				<input type="submit" value="Submit">
+			</div>
+	</div>
+</div>	
+</body>
+</html>
