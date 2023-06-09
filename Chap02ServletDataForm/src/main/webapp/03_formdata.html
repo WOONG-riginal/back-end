@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>폼 데이터 전송</title>
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="panel-heading">
+		<h1>Form Data</h1>
+	</div>
+	<div class="panel-body">
+		<form action="formdata" method="post" novalidate autocomplete="off">
+			<table class="table">
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="name" size="30" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="id" size="30" maxlength="10" value="id"></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="password" size="30" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td>주소</td>
+					<td><input type="text" name="address"></td>
+				</tr>
+				<tr>
+					<td>주문수량</td>
+					<td><input type="number" name="qty" min="0" max="10" step="2"></td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td><input type="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td>URL</td>
+					<td><input type="url" name="url" size="50" required></td>
+				</tr>
+				<tr>
+					<td>날짜</td>
+					<td><input type="date" name="date" required></td>
+				</tr>
+				<tr>
+					<td>Comment</td>
+					<td><textarea name="comment" cols="30" rows="10"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td>구단명</td>
+					<td>
+						<input type="radio" name="baseball" value="기아" checked>기아
+						<input type="radio" name="baseball" value="삼성">삼성
+						<input type="radio" name="baseball" value="두산">두산
+						<input type="radio" name="baseball" value="SSG">SSG
+						<input type="radio" name="baseball" value="LG">LG
+						<input type="radio" name="baseball" value="롯데">롯데
+						<input type="radio" name="baseball" value="KT">KT
+						<input type="radio" name="baseball" value="NC">NC
+						<input type="radio" name="baseball" value="한화">한화
+						<input type="radio" name="baseball" value="키움">키움
+					</td>
+				</tr>
+				<tr>
+					<td>선호구단</td>
+					<td>
+						<input type="checkbox" name="favorite" value="기아" checked>기아
+						<input type="checkbox" name="favorite" value="삼성">삼성
+						<input type="checkbox" name="favorite" value="두산">두산
+						<input type="checkbox" name="favorite" value="SSG">SSG
+						<input type="checkbox" name="favorite" value="LG">LG
+						<input type="checkbox" name="favorite" value="롯데">롯데
+						<input type="checkbox" name="favorite" value="KT">KT
+						<input type="checkbox" name="favorite" value="NC">NC
+						<input type="checkbox" name="favorite" value="한화">한화
+						<input type="checkbox" name="favorite" value="키움">키움
+					</td>
+				</tr>
+				<tr>
+					<td>최고선호구단</td>
+					<td>
+						<select name="kleague">
+							<option>선택해주세요</option>
+							<option value="울산" selected>울산</option>
+							<option value="전북">전북</option>
+							<option value="수원">수원</option>
+							<option value="서울">서울</option>
+							<option value="포항">포항</option>
+							<option value="대구">대구</option>
+							<option value="제주">제주</option>
+							<option value="대전">대전</option>
+							<option value="인천">인천</option>
+							<option value="부산">부산</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>최고선호구단</td>
+					<td>
+						<select name="kleague2" multiple size="10">
+							<option>선택해주세요</option>
+							<option value="울산" selected>울산</option>
+							<option value="전북">전북</option>
+							<option value="수원">수원</option>
+							<option value="서울">서울</option>
+							<option value="포항">포항</option>
+							<option value="대구">대구</option>
+							<option value="제주">제주</option>
+							<option value="대전">대전</option>
+							<option value="인천">인천</option>
+							<option value="부산">부산</option>
+						</select>	
+					</td>
+				</tr>
+				
+				<tr>
+					<td>File Upload</td>
+					<td>
+						<input type="file" name="upload" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="전송">
+						<input type="reset" value="리셋">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

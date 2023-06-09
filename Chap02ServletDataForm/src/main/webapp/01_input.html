@@ -1,0 +1,42 @@
+<!-- 
+	<form> 태그 중 post 방식
+	: 기본 HTML에서 데이터를 전달하는 방식은 form이 기본 -> 입력양식 자체를 의미
+	  한 번에 여러 개의 데이터를 묶어서 submit버튼 클릭 시 전송
+	  action 속성 = 데이터를 처리할 곳을 지정
+	  method 속성 = get/post 데이터 방식 결정, 기본값은 get
+	  
+	쿼리 스트링(Query String)
+	: 특정한 주소(url)에 포함된 추가적인 데이터
+	  a. get 방식의 경우 => ? 뒤에 키(key)=밸류(value)쌍으로 구현
+	                     => 동일한 키(key)는 중복 가능
+	                     => 문자열로만 전송 가능
+	  b. post 방식의 경우 => (HTTP body)에 붙어서 데이터 전송
+	                      => 문자열로만 전송 가능
+	  (참고) 서버단 프로그래밍 시 쿼리 스트링의 키(key)들을 [파라미터]라고 함
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>input폼 데이터 전송</title>
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="panel-body">
+		<!-- 처리 서블릿명 = InputServlet | 매핑명 = input | 데이터전송방식 get -->		
+		<form action="input" method="get" autocomplete="off">
+			아이디 : <input type="text" name="user_id"> <br>
+			비밀번호 : <input type="password" name="user_pw"> <br>
+			
+			<input type="checkbox" name="subject" value="java"> 자바
+			<input type="checkbox" name="subject" value="servlet"> 서블릿
+			<input type="checkbox" name="subject" value="jsp"> JSP
+			<input type="checkbox" name="subject" value="oracle"> 오라클
+			<input type="checkbox" name="subject" value="react"> 리액트
+			<br><br>
+			<input type="submit" value="로그인">
+			<input type="reset" value="다시입력">
+		</form>
+	</div>
+</body>
+</html>
