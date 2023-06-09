@@ -1,0 +1,169 @@
+@charset "utf-8";
+html,body{
+    font-size: 62.5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+.logo h1{
+    font-size: 2.4rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+aside p{
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+}
+aside button{
+    width: 100px;
+    height: 32px;
+    background: rgb(182,26,26);
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.gnb ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: #000;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.contents{
+    max-width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+footer{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background: #000;
+    height: 36px;
+}
+.contents h2{
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 24px 0;
+}
+.contents p{
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+}
+
+/* =================메인공통구조================= */
+
+/* 로그인 */
+.login{
+    width: 50%;
+    margin: 32px auto;
+    font-size: 1.6rem;
+    padding: 100px 0;
+    border: 1px solid #000;
+}
+.login li {
+    margin: 20px 0;
+}
+.login li:last-child {
+    margin-top: 48px;
+}
+
+/* 예약하기 */
+.contents .list ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.contents .list ul li{
+    width: 30%;
+}
+.contents .list ul li>p{
+    margin-top: 24px;
+}
+
+/* 검색영역 */
+.search,.searchText{
+    border-top: 1px dashed #a1a1a1;
+    text-align: right;
+    padding: 16px 0;
+}
+.search_form{
+    display: flex;
+    justify-content: end;
+}
+.search>h3,.searchText>h3{
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+.search select,.searchText select{
+    width: 120px;
+    margin-right: 12px;
+}
+.search form+button{
+    margin-top: 12px;
+}
+
+/* 영화 정보/옵션 선택 페이지 */
+.info{
+    display: flex;
+    font-size: 2.1rem;
+    margin-top: 24px;
+}
+.info ul:first-child{
+    margin-right: 64px;
+}
+.movie_info li{
+    line-height: 3;
+    border-bottom: 1px dotted #999;
+}
+.info+div{
+    margin-top: 32px;
+    text-align: right;
+    margin-bottom: 32px;
+}
+.info select{
+    width: 140px;
+    display: inline-block;
+}
+
+/* 예약 결과 페이지 */
+.reserve_title,.reserve_result{
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+.reserve_title ul,.reserve_result ul{
+    display: flex;
+    justify-content: space-between;
+}
+.reserve_title ul li{
+    padding: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #000;
+}
+.reserve_result ul li{
+    border-bottom: none;
+    margin-bottom: 100px;
+}
+.reserve_result button{
+    background: #f00;
+    color: #fff;
+    font-size: 1.6rem;
+}
